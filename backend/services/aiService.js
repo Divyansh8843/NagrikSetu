@@ -52,9 +52,9 @@ const analyzeRoadImage = asyncHandler(async (imageBuffer, imageMimeType) => {
       };
     }
 
-    // Initialize Gemini 1.5 Flash model (free tier, good for image analysis)
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    console.log("Gemini 1.5 Flash model initialized successfully");
+    // Initialize Gemini 2.0 Flash model (free tier, good for image analysis)
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    console.log("Gemini 2.0 Flash model initialized successfully");
 
     // Convert image buffer to base64
     const base64Image = imageBuffer.toString("base64");

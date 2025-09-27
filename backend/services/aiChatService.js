@@ -74,9 +74,9 @@ async function sendAIChatMessage({ message, userId }) {
     return `Hi! I'm your NagrikSetu Civic Assistant. Gemini API key is not configured. Please contact support.`;
   }
   try {
-    // Use Gemini 1.5 Flash for chat
+    // Use Gemini 2.0 Flash for chat
     const url =
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" +
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" +
       process.env.GEMINI_API_KEY;
     const body = {
       contents: [
